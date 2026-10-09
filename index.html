@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación de caracteres (tildes y ñ) -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celulares y tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>San Judas Eventos y Banquetes</title>
+
+    <!-- Conexión con el archivo de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- 1. ENCABEZADO: logo + menú (Flexbox)          -->
+    <!-- ============================================ -->
+    <header class="encabezado">
+        <div class="logo">San Judas <span>Eventos y Banquetes</span></div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================ -->
+        <!-- 2. HERO: dos columnas (texto + imagen)        -->
+        <!-- ============================================ -->
+        <section class="hero" id="inicio">
+            <!-- Columna izquierda -->
+            <div class="hero-texto">
+                <h1>Banquetes y eventos que se recuerdan toda la vida</h1>
+                <p class="eslogan">Celebramos tus momentos más importantes</p>
+                <p>
+                    En San Judas Eventos y Banquetes organizamos bodas, quinceañeros,
+                    cumpleaños, grados y celebraciones empresariales. Nos encargamos de la
+                    comida, la decoración y la logística para que tú solo disfrutes con tus invitados.
+                </p>
+                <a href="#contacto" class="boton">Cotiza tu evento</a>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="hero-imagen">
+                <img src="img/mesas de bodas.jpg"
+                     alt="Mesa de banquete decorada para una boda con manteles blancos y flores">
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 3. NOSOTROS: imagen + texto (Flexbox)         -->
+        <!-- ============================================ -->
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-imagen">
+                <img src="img/equipo de trabajo.jpg"
+                     alt="Equipo de San Judas Eventos y Banquetes preparando un salón de eventos">
+            </div>
+
+            <div class="nosotros-texto">
+                <h2>Nosotros</h2>
+
+                <h3>¿Quiénes somos?</h3>
+                <p>Somos una empresa familiar dedicada a la organización de eventos y banquetes.</p>
+
+                <h3>¿Qué hacemos?</h3>
+                <p>Preparamos el menú, montamos el salón, decoramos y atendemos a tus invitados de principio a fin.</p>
+
+                <h3>¿A quién ayudamos?</h3>
+                <p>A familias, parejas, empresas e instituciones que quieren celebrar sin preocuparse por los detalles.</p>
+
+                <h3>¿Qué nos diferencia?</h3>
+                <ul class="lista">
+                    <li>Comida preparada el mismo día del evento</li>
+                    <li>Menús personalizados según tu presupuesto</li>
+                    <li>Atención directa del dueño en cada evento</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 4. PRODUCTOS (tarjetas con flex-wrap)         -->
+        <!-- ============================================ -->
+        <section class="productos" id="productos">
+            <h2>Nuestros productos</h2>
+
+            <div class="productos-contenedor">
+
+                <!-- Tarjeta 1 -->
+                <article class="producto">
+                    <img src="img/food-1050813_1280.jpg"
+                         alt="Plato servido en un banquete de bodas">
+                    <h3>Banquete de bodas</h3>
+                    <p>Menú de tres tiempos con entrada, plato fuerte y postre.</p>
+                    <p class="precio">Desde $55.000 por persona</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="producto">
+                    <img src="img/fiesta quinceaños-1446334744-1024x1024.jpg"
+                         alt="Mesa de fiesta de quince años con torta y decoración rosada">
+                    <h3>Fiesta de quince años</h3>
+                    <p>Cena, torta, decoración temática y servicio de meseros.</p>
+                    <p class="precio">Desde $48.000 por persona</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="producto">
+                    <img src="img/fiesta globos.jpg"
+                         alt="Mesa de cumpleaños con pasabocas y globos">
+                    <h3>Cumpleaños</h3>
+                    <p>Pasabocas, almuerzo o cena según el tamaño de tu celebración.</p>
+                    <p class="precio">Desde $30.000 por persona</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="producto">
+                    <img src="img/evento empresarial-1283608_1280.jpg"
+                         alt="Salón con mesas servidas para un evento empresarial">
+                    <h3>Evento empresarial</h3>
+                    <p>Almuerzos ejecutivos, coffee break y cenas de fin de año.</p>
+                    <p class="precio">Desde $28.000 por persona</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+                <!-- Tarjeta 5 -->
+                <article class="producto">
+                    <img src="img/grados .jpg"
+                         alt="Celebración de grado con mesa de comida y birretes decorativos">
+                    <h3>Celebración de grado</h3>
+                    <p>Menú especial para celebrar con tu familia y amigos.</p>
+                    <p class="precio">Desde $35.000 por persona</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+                <!-- Tarjeta 6 -->
+                <article class="producto">
+                    <img src="img/pasabocas.jpg"
+                         alt="Bandeja de pasabocas variados para eventos">
+                    <h3>Pasabocas y recepciones</h3>
+                    <p>Bandejas de pasabocas fríos y calientes para recibir a tus invitados.</p>
+                    <p class="precio">Desde $120.000 la bandeja</p>
+                    <a href="#contacto" class="boton">Cotizar</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 5. SERVICIOS / BENEFICIOS (Flexbox)           -->
+        <!-- ============================================ -->
+        <section class="servicios" id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <div class="servicios-contenedor">
+
+                <div class="servicio">
+                    <!-- Emoji usado como icono -->
+                    <div class="icono">🍽️</div>
+                    <h3>Catering completo</h3>
+                    <p>Cocina, montaje y servicio de meseros incluidos en tu evento.</p>
+                    <a href="#contacto" class="boton-secundario">Más información</a>
+                </div>
+
+                <div class="servicio">
+                    <div class="icono">🎈</div>
+                    <h3>Decoración</h3>
+                    <p>Ambientamos el salón con flores, luces, mesas y mantelería a tu gusto.</p>
+                    <a href="#contacto" class="boton-secundario">Más información</a>
+                </div>
+
+                <div class="servicio">
+                    <div class="icono">📋</div>
+                    <h3>Organización total</h3>
+                    <p>Planeamos horarios, proveedores y detalles para que todo salga en orden.</p>
+                    <a href="#contacto" class="boton-secundario">Más información</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 6. TABLA DE PAQUETES                          -->
+        <!-- ============================================ -->
+        <section class="tabla-seccion">
+            <h2>Paquetes para tu evento</h2>
+
+            <table class="tabla">
+                <caption>Elige el paquete que mejor se ajuste a tu celebración</caption>
+
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Paquete</th>
+                        <th>Invitados</th>
+                        <th>Incluye</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <!-- Cuerpo de la tabla -->
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>Hasta 30</td>
+                        <td>Comida y servicio de meseros</td>
+                        <td>$1.200.000</td>
+                    </tr>
+                    <tr>
+                        <td>Familiar</td>
+                        <td>Hasta 60</td>
+                        <td>Comida, bebidas y mantelería</td>
+                        <td>$2.600.000</td>
+                    </tr>
+                    <tr>
+                        <td>Celebración</td>
+                        <td>Hasta 100</td>
+                        <td>Comida, decoración básica y torta</td>
+                        <td>$4.800.000</td>
+                    </tr>
+                    <tr>
+                        <td>Gran fiesta</td>
+                        <td>Hasta 150</td>
+                        <td>Comida, decoración completa y coordinación</td>
+                        <td>$7.500.000</td>
+                    </tr>
+                    <tr>
+                        <td>Boda completa</td>
+                        <td>Hasta 200</td>
+                        <td>Banquete, decoración, torta y organización total</td>
+                        <td>$11.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 7. GALERÍA (flex-wrap)                        -->
+        <!-- ============================================ -->
+        <section class="galeria" id="galeria">
+            <h2>Galería</h2>
+
+            <div class="galeria-contenedor">
+                <img src="img/mesas de bodas.jpg"
+                     alt="Salón decorado para una boda con mesas redondas y velas">
+                <img src="img/food-1050813_1280.jpg"
+                     alt="Mesa larga de banquete con platos servidos">
+                <img src="img/torta flores.jpg"
+                     alt="Torta de celebración decorada con flores">
+                <img src="img/fiesta globos.jpg"
+                     alt="Decoración de globos y luces en un salón de fiestas">
+                <img src="img/pasabocas servir.jpg"
+                     alt="Bandejas de pasabocas listas para servir a los invitados">
+                <img src="img/mesas con manteles y copas.jpg"
+                     alt="Montaje de mesas con mantelería blanca y copas">
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 8. FORMULARIO DE CONTACTO                     -->
+        <!-- ============================================ -->
+        <section class="contacto" id="contacto">
+            <h2>Contáctanos</h2>
+            <p class="contacto-texto">Cuéntanos qué quieres celebrar y te enviamos una cotización.</p>
+
+            <form class="formulario" action="#" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Leidy Daniela Hernandez Lopez" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="3247828425">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Medellin">
+
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio">
+                    <option value="bodas">Banquete de bodas</option>
+                    <option value="quince">Fiesta de quince años</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="empresarial">Evento empresarial</option>
+                    <option value="grados">Celebración de grado</option>
+                    <option value="pasabocas">Pasabocas y recepciones</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Fecha, número de invitados y detalles de tu evento"></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- 9. PIE DE PÁGINA (Flexbox)                    -->
+    <!-- ============================================ -->
+    <footer class="pie-pagina">
+        <div class="pie-contenedor">
+            <div class="pie-columna">
+                <h3>San Judas Eventos y Banquetes</h3>
+                <p>Celebramos tus momentos más importantes</p>
+            </div>
+
+            <div class="pie-columna">
+                <h3>Contacto</h3>
+                <!-- Cambia estos datos por los reales de tu negocio -->
+                <p>Ciudad: Medellin , Colombia</p>
+                <p>Teléfono: 3247828425</p>
+                <p>Correo: contacto@sanjudaseventos.com</p>
+                <p>Instagram: <a href="#">@sanjudaseventos</a></p>
+            </div>
+        </div>
+
+        <p class="derechos">© 2026 San Judas Eventos y Banquetes — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
